@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.impacta.noma.nomaapp.MainActivity"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:id="@+id/imagemLogin"
+        android:layout_width="392dp"
+        android:layout_height="176dp"
+        app:srcCompat="@drawable/noma"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/msg" />
+
+    <Button
+        android:id="@+id/button_telaLogin"
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:text="@string/button_telaLogin"
+        android:onClick="telaLogin"/>
+
+</LinearLayout>

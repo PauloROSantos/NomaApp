@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Studio Noma</string>
+    <string name="login">login: </string>
+    <string name="msg">Bem vindo ao Studio Noma</string>
+    <string name="login_dado"></string>
+    <string name="senha">Senha: </string>
+    <string name="senha_dado"></string>
+    <string name="button_login">Logar!</string>
+    <string name="button_telaLogin">Ir para tela de Login </string>
+    <string name="bemVindo">login %1$s senha %2$s</string>
+</resources>
