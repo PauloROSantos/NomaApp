@@ -24,7 +24,7 @@ public class logado extends DebugActivity {
         setContentView(R.layout.activity_logado);
 
         ActionBar actionBar = getSupportActionBar();
-        actionBar.setTitle("Logado");
+        actionBar.setTitle("Studio Noma");
 
         Bundle bundle = getIntent().getExtras();
         if(bundle != null){

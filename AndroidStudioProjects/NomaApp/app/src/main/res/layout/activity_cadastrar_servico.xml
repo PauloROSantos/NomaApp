@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="br.com.impacta.noma.nomaapp.ServicosActivity"
+    tools:context="br.com.impacta.noma.nomaapp.CadastrarServico"
     android:orientation="vertical">
 
     <TextView
@@ -68,6 +68,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/cadServicoBtn"
-        android:onClick="CadastrarServico"/>
+        android:onClick="CadastrarServicoFn"/>
 
 </LinearLayout>

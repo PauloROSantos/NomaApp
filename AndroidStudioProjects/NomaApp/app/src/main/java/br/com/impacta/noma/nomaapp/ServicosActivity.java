@@ -54,11 +54,11 @@ public class ServicosActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         if(id == android.R.id.home) {
-            Intent it = new Intent(ServicosActivity.this,ServicosActivity.class);
+            Intent it = new Intent(ServicosActivity.this,logado.class);
             startActivity(it);
             return true;
         } else if ( id == R.id.action_cadastrar_servico) {
-            cadastrarServico();
+            cadastrarServico2();
         }
         return false;
     }
@@ -67,38 +67,8 @@ public class ServicosActivity extends AppCompatActivity {
         setContentView(R.layout.activity_cadastrar_servico);
     }
 
-
-    public void CadastrarServico(View view) {
-        EditText nomeServico = (EditText) findViewById(R.id.cadNomeServicoDado);
-        EditText tempoEstimadoServico = (EditText) findViewById(R.id.cadTempoEstimadoServicoDado);
-        EditText tempoAplicacaoServico = (EditText) findViewById(R.id.cadTempoAplicacaoServicoDado);
-        EditText precoServico = (EditText) findViewById(R.id.cadPreçoServicoDado);
-
-        String nome = nomeServico.getText().toString();
-        Integer tempoEstimado = Integer.parseInt(tempoEstimadoServico.getText().toString());
-        Integer tempoAplicacao = Integer.parseInt(tempoAplicacaoServico.getText().toString());
-        Double preco = Double.parseDouble(precoServico.getText().toString());
-
-        Servico servico = new Servico(nome,tempoEstimado,tempoAplicacao,preco);
-        ServicosDB dbServicos = new ServicosDB(ServicosActivity.this);
-        dbServicos.save(servico);
-        limpar();
-    }
-
-    private void limpar() {
-        EditText nomeServico = (EditText) findViewById(R.id.cadNomeServicoDado);
-        EditText tempoEstimadoServico = (EditText) findViewById(R.id.cadTempoEstimadoServicoDado);
-        EditText tempoAplicacaoServico = (EditText) findViewById(R.id.cadTempoAplicacaoServicoDado);
-        EditText precoServico = (EditText) findViewById(R.id.cadPreçoServicoDado);
-
-        nomeServico.setText("");
-        tempoEstimadoServico.setText("");
-        tempoAplicacaoServico.setText("");
-        precoServico.setText("");
-    }
-
-    private void servicoDetalhe() {
-        Intent it = new Intent(ServicosActivity.this,ServicosActivity.class);
+    public void cadastrarServico2 () {
+        Intent it = new Intent(ServicosActivity.this,CadastrarServico.class);
         startActivity(it);
     }
 }

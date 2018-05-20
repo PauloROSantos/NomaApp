@@ -8,10 +8,12 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ProgressBar;
+import android.widget.Toast;
 
 public class MainActivity extends DebugActivity {
 
-
+    String loginsalvo = "Paulo";
+    String senhasalvo = "1234";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +37,7 @@ public class MainActivity extends DebugActivity {
     }
 
     public void logar(View view){
+
         Intent it = new Intent(MainActivity.this,logado.class);
 
         ProgressBar loading = (ProgressBar) findViewById(R.id.progressBar_login);
@@ -51,6 +54,20 @@ public class MainActivity extends DebugActivity {
 
         CheckBox checkLembrar = (CheckBox) findViewById(R.id.checkLembrar);
         boolean lembrar = checkLembrar.isChecked();
+
+        if(!(login.matches("Paulo"))){
+            Toast.makeText(MainActivity.this,"Login incorreto",Toast.LENGTH_SHORT).show();
+
+            loading.setVisibility(view.INVISIBLE);
+            logar.setVisibility(view.VISIBLE);
+            return;
+        } else if (!(senha.matches("1234"))) {
+            Toast.makeText(MainActivity.this,"senha incorreto",Toast.LENGTH_SHORT).show();
+
+            loading.setVisibility(view.INVISIBLE);
+            logar.setVisibility(view.VISIBLE);
+            return;
+        }
 
         if(lembrar){
             Prefs.setBoolean(MainActivity.this,"lembrar",lembrar);
