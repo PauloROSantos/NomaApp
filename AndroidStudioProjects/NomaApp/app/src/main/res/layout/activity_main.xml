@@ -7,26 +7,22 @@
     android:layout_height="match_parent"
     tools:context="br.com.impacta.noma.nomaapp.MainActivity"
     android:orientation="vertical"
+    android:background="#666666"
     >
 
     <ImageView
         android:id="@+id/imagemLogin"
-        android:layout_width="392dp"
+        android:layout_width="match_parent"
         android:layout_height="176dp"
         app:srcCompat="@drawable/noma"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
-
-    <TextView
-        android:id="@+id/msg"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/msg" />
+        tools:layout_editor_absoluteY="0dp"
+        android:layout_gravity="fill_horizontal"/>
 
     <Button
         android:id="@+id/button_telaLogin"
         android:layout_width="match_parent"
-        android:layout_height="102dp"
+        android:layout_height="wrap_content"
         android:text="@string/button_telaLogin"
         android:onClick="telaLogin"/>
 

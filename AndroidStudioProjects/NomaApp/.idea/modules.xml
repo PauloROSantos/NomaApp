@@ -3,7 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/NomaApp.iml" filepath="$PROJECT_DIR$/NomaApp.iml" />
+      <module fileurl="file://C:\Users\Android\Desktop\AndroidStudioProjects\NomaApp\NomaApp.iml" filepath="C:\Users\Android\Desktop\AndroidStudioProjects\NomaApp\NomaApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\Android\Desktop\NomaApp\app\app.iml" filepath="C:\Users\Android\Desktop\NomaApp\app\app.iml" />
+      <module fileurl="file://C:\Users\Android\Desktop\AndroidStudioProjects\NomaApp\app\app.iml" filepath="C:\Users\Android\Desktop\AndroidStudioProjects\NomaApp\app\app.iml" />
     </modules>
   </component>
 </project>

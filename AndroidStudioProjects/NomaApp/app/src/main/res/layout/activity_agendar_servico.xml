@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.impacta.noma.nomaapp.agendarServico"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/agendar_profissional"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/agendar_profissional" />
+
+    <EditText
+        android:id="@+id/agendar_profissionalDado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/agendar_profissionalDado" />
+
+    <TextView
+        android:id="@+id/agendar_servico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/agendar_servico" />
+
+    <EditText
+        android:id="@+id/agendar_servicoDado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/agendar_servicoDado" />
+
+    <TextView
+        android:id="@+id/agendar_horario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/agendar_horario" />
+
+    <EditText
+        android:id="@+id/agendar_horarioDado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/agendar_horarioDado" />
+
+    <Button
+        android:id="@+id/agendarBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/agendarBtn"
+        android:onClick="enviarAgendamento"/>
+</LinearLayout>

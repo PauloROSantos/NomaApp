@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_calendario"
+        android:icon="@drawable/ic_calendar_18dp"
+        android:title="@string/action_calendario"
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/action_agendar"
+        android:icon="@drawable/ic_add_18dp"
+        android:title="@string/action_agendar"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/action_servicos"
+        android:icon="@drawable/ic_add_18dp"
+        android:title="@string/action_servicos"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_procurar"
+        android:title="@string/action_procurar"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/action_share"
+        android:title="@string/action_compartilhar"
+        app:actionProviderClass="android.support.v7.widget.ShareActionProvider"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/action_config"
+        android:title="@string/action_config"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_sair"
+        android:title="@string/action_sair"
+        app:showAsAction="never" />
+
+
+</menu>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.impacta.noma.nomaapp.ServicosActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/cadNomeServico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cadNomeServico" />
+
+    <EditText
+        android:id="@+id/cadNomeServicoDado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/cadNomeServicoDado" />
+
+    <TextView
+        android:id="@+id/cadTempoEstimadoServico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cadTempoEstimadoServico" />
+
+    <EditText
+        android:id="@+id/cadTempoEstimadoServicoDado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/cadTempoEstimadoServicoDado" />
+
+    <TextView
+        android:id="@+id/cadTempoAplicacaoServico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cadTempoAplicacaoServico" />
+
+    <EditText
+        android:id="@+id/cadTempoAplicacaoServicoDado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/cadTempoAplicacaoServicoDado" />
+    <TextView
+        android:id="@+id/cadPreçoServico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cadPreçoServico" />
+
+    <EditText
+        android:id="@+id/cadPreçoServicoDado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/cadPreçoServicoDado" />
+
+
+    <Button
+        android:id="@+id/CadServicoBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cadServicoBtn"
+        android:onClick="CadastrarServico"/>
+
+</LinearLayout>

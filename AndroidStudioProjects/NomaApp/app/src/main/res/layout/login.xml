@@ -39,12 +39,33 @@
         android:ems="10"
         android:inputType="textPassword"
         android:text="@string/login_dado"/>
-
-    <Button
-        android:id="@+id/button_login"
-        android:layout_width="match_parent"
+    <CheckBox
+        android:id="@+id/checkLembrar"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button_login"
-        android:onClick="logar"/>
+        android:text="Lembrar usuário e senha"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/progressBar_login"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"/>
+
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="logar"
+            android:text="@string/button_login"
+            android:textAlignment="center" />
+
+
+    </FrameLayout>
 
 </LinearLayout>

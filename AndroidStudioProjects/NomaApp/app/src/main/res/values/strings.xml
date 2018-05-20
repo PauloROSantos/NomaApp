@@ -8,4 +8,30 @@
     <string name="button_login">Logar!</string>
     <string name="button_telaLogin">Ir para tela de Login </string>
     <string name="bemVindo">login %1$s senha %2$s</string>
+    <string name="action_calendario">Calendario</string>
+    <string name="action_sair">Sair</string>
+    <string name="action_agendar">Agendar</string>
+    <string name="action_config">Config</string>
+    <string name="agendar_profissional">Profissional :</string>
+    <string name="agendar_servico">Serviço :</string>
+    <string name="agendar_horario">Horario :</string>
+    <string name="agendar_horarioDado"></string>
+    <string name="agendar_servicoDado"></string>
+    <string name="agendar_profissionalDado"></string>
+    <string name="agendarBtn">Agendar</string>
+    <string name="action_procurar">Procurar</string>
+    <string name="action_compartilhar">Compartilhar</string>
+    <string name="title_activity_cadastrar_servico">cadastrarServico</string>
+    <string name="action_servicos">Serviços</string>
+    <string name="action_cadastrar_servico">Cadastrar serviços</string>
+    <string name="cadNomeServico">Serviço: </string>
+    <string name="cadNomeServicoDado"></string>
+    <string name="cadTempoEstimadoServico">Tempo estimado:</string>
+    <string name="cadTempoEstimadoServicoDado"></string>
+    <string name="cadTempoAplicacaoServico">Tempo aplicação:</string>
+    <string name="cadTempoAplicacaoServicoDado"></string>
+    <string name="cadPreçoServico">Preço:</string>
+    <string name="cadPreçoServicoDado"></string>
+    <string name="cadServicoBtn">Cadastrar</string>
+
 </resources>
