@@ -7,16 +7,43 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 public class agendarServico extends AppCompatActivity {
+
+    private String[] servicos = new String[]{"Corte masculino","Corte Feminino","Pintura","Escova"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_agendar_servico);
+
+
+        Spinner spinner = findViewById(R.id.spinner2);
+        ServicosDB servicosDB = new ServicosDB(agendarServico.this);
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_dropdown_item,servicos);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
+
+        //spinner.setAdapter(new ServicoAdapter(agendarServico.this, servicosDB.findAll()));
+
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                //EditText agendamentoServico = (EditText) findViewById(R.id.agendar_servicoDado);
+                //agendamentoServico.setText(view.getSelectedItem().toString());
+            }
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
 
         ActionBar actionBar = getSupportActionBar();
         actionBar.setTitle("Agendamento");
@@ -47,7 +74,9 @@ public class agendarServico extends AppCompatActivity {
         String strAgendamentoPro = agendamentoProfissional.getText().toString();
 
         EditText agendamentoServico = (EditText) findViewById(R.id.agendar_servicoDado);
-        String strAgendamentoServico = agendamentoServico.getText().toString();
+        //String strAgendamentoServico = agendamentoServico.getText().toString();
+        Spinner sp = (Spinner) findViewById(R.id.spinner2);
+        String strAgendamentoServico = sp.getSelectedItem().toString();
 
         EditText agendamentoHorario = (EditText) findViewById(R.id.agendar_horarioDado);
         String strAgendamentoHorario = agendamentoHorario.getText().toString();

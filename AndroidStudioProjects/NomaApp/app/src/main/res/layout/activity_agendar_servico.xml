@@ -29,6 +29,11 @@
         android:layout_height="wrap_content"
         android:text="@string/agendar_servico" />
 
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
     <EditText
         android:id="@+id/agendar_servicoDado"
         android:layout_width="match_parent"
@@ -57,4 +62,5 @@
         android:layout_height="wrap_content"
         android:text="@string/agendarBtn"
         android:onClick="enviarAgendamento"/>
+
 </LinearLayout>
